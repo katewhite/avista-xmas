@@ -1,0 +1,76 @@
+.sidebar {
+	width: 240px;
+	top: 30px;
+	bottom: 0px;
+	position: absolute;
+	.logo-container {
+		height: 85px;
+		background-color: $dark-avista-blue;
+		.logo-bg {
+			height: 40px;
+			width: 117px;
+			background-color: $avista-logo-blue;
+			img {
+				position: relative;
+				width: 109px;
+				height: 21px;
+				top: 10px;
+				left: 4px;
+			}
+		}
+	}
+	.information-container {
+		background-color: $sidebar-green;
+		height: 100%;
+		h2 {
+			color: $pure-white;
+			text-transform: uppercase;
+			font-size: 22px;
+			padding: 10px;
+		}
+		p {
+			color: $pure-white;
+			font-size: 12px;
+			padding: 10px;
+		}
+	}
+	.character-container {
+		div {
+			display: inline-block;
+			margin-left: 16px;
+			margin-right: 16px;
+			margin-top: 5px;
+		}
+		.bear-container {
+			margin-left: 6px;
+		}
+		.salmon-container {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		img {
+			display: block;
+		}
+		.snowman {
+			height: 85px;
+			width: 85px;
+		}
+		.bear {
+			height: 80px;
+			width: 84px;
+		}
+		.owl {
+			height: 75px;
+			width: 90px;
+		}
+		.salmon {
+			height: 82px;
+			width: 101px;
+		}
+		label {
+			color: $pure-white;
+			font-size: 12px;
+			padding: 10px;
+		}
+	}
+}
