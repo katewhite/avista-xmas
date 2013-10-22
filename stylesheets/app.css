@@ -148,14 +148,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .sidebar .zia-image {
   width: 384px;
   height: 196px;
-  margin-top: -163px;
+  margin-top: -135px;
   margin-left: -21px;
 }
 /* line 49, ../sass/_sidebar.scss */
 .sidebar .information-container {
   background-color: #82c341;
   height: 516px;
-  margin-top: -8px;
+  margin-top: -36px;
   padding: 5px;
 }
 /* line 54, ../sass/_sidebar.scss */
@@ -173,101 +173,101 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 12px;
   padding: 10px;
 }
-/* line 69, ../sass/_sidebar.scss */
-.sidebar .character-container div {
+/* line 70, ../sass/_sidebar.scss */
+.sidebar .character-container li {
   display: inline-block;
   margin-left: 10px;
   margin-right: 16px;
   margin-top: 5px;
 }
-/* line 75, ../sass/_sidebar.scss */
+/* line 76, ../sass/_sidebar.scss */
 .sidebar .character-container .bear-container {
   margin-left: 6px;
 }
-/* line 78, ../sass/_sidebar.scss */
+/* line 79, ../sass/_sidebar.scss */
 .sidebar .character-container .salmon-container {
   margin-left: 0px;
   margin-right: 0px;
 }
-/* line 82, ../sass/_sidebar.scss */
+/* line 83, ../sass/_sidebar.scss */
 .sidebar .character-container img {
   display: block;
 }
-/* line 85, ../sass/_sidebar.scss */
+/* line 86, ../sass/_sidebar.scss */
 .sidebar .character-container .snowman {
   height: 85px;
   width: 85px;
 }
-/* line 89, ../sass/_sidebar.scss */
+/* line 90, ../sass/_sidebar.scss */
 .sidebar .character-container .bear {
   height: 80px;
   width: 84px;
 }
-/* line 93, ../sass/_sidebar.scss */
+/* line 94, ../sass/_sidebar.scss */
 .sidebar .character-container .owl {
   height: 75px;
   width: 90px;
 }
-/* line 97, ../sass/_sidebar.scss */
+/* line 98, ../sass/_sidebar.scss */
 .sidebar .character-container .salmon {
   height: 82px;
   width: 101px;
 }
-/* line 101, ../sass/_sidebar.scss */
+/* line 102, ../sass/_sidebar.scss */
 .sidebar .character-container label {
   color: white;
   font-size: 12px;
   padding: 10px;
 }
-/* line 109, ../sass/_sidebar.scss */
-.sidebar .sweater-style-container div {
+/* line 111, ../sass/_sidebar.scss */
+.sidebar .sweater-style-container li {
   display: inline-block;
-  margin-left: 18px;
+  margin-left: 17px;
   margin-top: 5px;
 }
-/* line 114, ../sass/_sidebar.scss */
+/* line 116, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-4-container {
   margin-left: 36px;
 }
-/* line 117, ../sass/_sidebar.scss */
+/* line 119, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container img {
   display: block;
 }
-/* line 120, ../sass/_sidebar.scss */
+/* line 122, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-1 {
   height: 76px;
   width: 88px;
 }
-/* line 124, ../sass/_sidebar.scss */
+/* line 126, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-2 {
   height: 74px;
   width: 88px;
 }
-/* line 128, ../sass/_sidebar.scss */
+/* line 130, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-3 {
   height: 76px;
   width: 88px;
 }
-/* line 132, ../sass/_sidebar.scss */
+/* line 134, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-4 {
   height: 76px;
   width: 53px;
 }
-/* line 136, ../sass/_sidebar.scss */
+/* line 138, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container label {
   color: white;
   font-size: 12px;
   padding: 10px;
 }
-/* line 143, ../sass/_sidebar.scss */
+/* line 145, ../sass/_sidebar.scss */
 .sidebar .sweater-color-label {
   margin-top: 30px;
 }
-/* line 146, ../sass/_sidebar.scss */
+/* line 148, ../sass/_sidebar.scss */
 .sidebar .sweater-colors {
   margin-left: 11px;
 }
-/* line 148, ../sass/_sidebar.scss */
+/* line 150, ../sass/_sidebar.scss */
 .sidebar .sweater-colors li {
   width: 18px;
   height: 18px;
@@ -277,35 +277,264 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-box-shadow: 0px 0px 5px #264D00;
   box-shadow: 0px 0px 5px #264D00;
 }
-/* line 157, ../sass/_sidebar.scss */
+/* line 159, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-1 {
   background-color: #EC1C24;
 }
-/* line 160, ../sass/_sidebar.scss */
+/* line 162, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-2 {
   background-color: #C4D82E;
 }
-/* line 163, ../sass/_sidebar.scss */
+/* line 165, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-3 {
   background-color: #96D1F2;
 }
-/* line 166, ../sass/_sidebar.scss */
+/* line 168, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-4 {
   background-color: #0076BE;
 }
-/* line 169, ../sass/_sidebar.scss */
+/* line 171, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-5 {
   background-color: #002A5F;
 }
-/* line 172, ../sass/_sidebar.scss */
+/* line 174, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-6 {
   background-color: #FFDF00;
 }
-/* line 175, ../sass/_sidebar.scss */
+/* line 177, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-7 {
   background-color: #FFFFFF;
 }
-/* line 179, ../sass/_sidebar.scss */
+/* line 182, ../sass/_sidebar.scss */
+.sidebar .scrollable-container {
+  height: 374px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* line 186, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list {
+  margin-top: -15px;
+  margin-left: -10px;
+}
+/* line 189, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list li {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+/* line 194, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-2-container {
+  margin-bottom: -3px;
+}
+/* line 197, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-3-container {
+  margin-left: 15px;
+}
+/* line 200, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-4-container {
+  margin-left: 20px;
+}
+/* line 203, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-5-container {
+  margin-left: 30px;
+}
+/* line 206, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-6-container {
+  margin-left: 33px;
+}
+/* line 209, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list img {
+  display: block;
+}
+/* line 212, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-1 {
+  height: 60px;
+}
+/* line 215, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-2 {
+  height: 71px;
+}
+/* line 218, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-3 {
+  height: 60px;
+}
+/* line 221, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-4 {
+  height: 41px;
+}
+/* line 224, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-5 {
+  height: 36px;
+}
+/* line 227, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list .hair-6 {
+  height: 50px;
+}
+/* line 230, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .hair-style-list label {
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+}
+/* line 236, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+/* line 239, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list li {
+  display: inline-block;
+  margin-top: -10px;
+  vertical-align: middle;
+}
+/* line 244, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list #accessory-list-item-2 {
+  margin-left: 36px;
+}
+/* line 247, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list #accessory-list-item-4 {
+  margin-left: 27px;
+}
+/* line 250, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list .accessory-1 {
+  width: 76px;
+}
+/* line 253, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list .accessory-2 {
+  width: 88px;
+}
+/* line 256, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list .accessory-3 {
+  width: 84px;
+}
+/* line 259, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .accessories-list .accessory-4 {
+  width: 93px;
+  margin-top: 17px;
+}
+/* line 264, ../sass/_sidebar.scss */
+.sidebar .scrollable-container #decorations-label {
+  margin-top: -20px;
+}
+/* line 267, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .create-text-container {
+  margin-left: 9px;
+}
+/* line 269, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .create-text-container .text-box-container {
+  display: inline-block;
+  height: 18px;
+  background-image: url("../resources/images/textbox-border.png");
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 134px;
+  position: relative;
+  margin-top: -35px;
+}
+/* line 278, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .create-text-container .text-box-container .sweater-text {
+  height: 13px;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 127px;
+  border: none;
+  color: #BBBDBF;
+  font-family: 'knitfontaregular';
+  font-size: 14px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+/* line 291, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .create-text-container .sweater-text-button {
+  display: inline-block;
+  background-image: url("../resources/images/create-button.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1px;
+  left: -4px;
+  color: white;
+  font-family: 'knitfontaregular';
+  font-size: 14px;
+  text-decoration: none;
+  width: 62px;
+  height: 18px;
+  padding-top: 4px;
+  padding-left: 5px;
+}
+/* line 308, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list {
+  margin-left: 0px;
+  margin-top: 15px;
+}
+/* line 311, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list li {
+  display: inline-block;
+  margin-top: -10px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+/* line 317, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list #blue-ornament-list-item {
+  margin-left: 7px;
+}
+/* line 320, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list #green-ornament-list-item {
+  margin-left: 4px;
+}
+/* line 323, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list #knit-tree-list-item {
+  margin-left: 7px;
+}
+/* line 326, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list #knit-snowman-list-item {
+  margin-left: 5px;
+}
+/* line 329, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list #lights-list-item {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+/* line 333, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .snowflake {
+  width: 60px;
+}
+/* line 336, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .poinsettia {
+  width: 65px;
+}
+/* line 339, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .bell {
+  width: 58px;
+}
+/* line 342, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .orange-ornament {
+  width: 64px;
+}
+/* line 345, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .blue-ornament {
+  width: 48px;
+}
+/* line 348, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .green-ornament {
+  width: 63px;
+}
+/* line 351, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .knit-reindeer {
+  width: 57px;
+}
+/* line 354, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .knit-tree {
+  width: 60px;
+}
+/* line 357, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .knit-snowman {
+  width: 49px;
+}
+/* line 360, ../sass/_sidebar.scss */
+.sidebar .scrollable-container .decorations-list .lights {
+  width: 171px;
+}
+/* line 365, ../sass/_sidebar.scss */
 .sidebar .hidden {
   display: none;
 }
