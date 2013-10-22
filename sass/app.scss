@@ -4,6 +4,21 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "webfonts";
 @import "colors";
-@import "sidebar";
 @import "header";
+@import "activearea";
+@import "sidebar";
+
+body {
+	background-color: #3d3d3d;
+}
+.create-container {
+	height: 600px;
+	width: 815px;
+	overflow: hidden;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}

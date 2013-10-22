@@ -5,41 +5,93 @@
 	<title>Avista Christmas</title>
 
 	<link rel="stylesheet" href="stylesheets/app.css" />
+	<link rel="stylesheet" href="stylesheets/icomoon.css">
 </head>
 <body>
 	<header class="app-header">
+		<ul class="inline-list">
+			<li>
+				<h5>avistautilities.com</h5>
+			</li>
+			<li class="connect-icon">
+				<a href="#" target="_blank">
+					<span aria-hidden="true" class="icon-facebook"></span>
+				</a>
+			</li>
+			<li class="connect-icon">
+				<a href="#" target="_blank">
+					<span aria-hidden="true" class="icon-twitter"></span>
+				</a>
+			</li>
+		</ul>
 	</header>
-	<aside class="sidebar">
-		<div class="logo-container">
+	<div class="create-container">
+		<aside class="sidebar">
+			<div class="logo-container"></div>
 			<div class="logo-bg">
 				<img src="resources/images/avista_logo-white_transparent.png">
 			</div>
-		</div>
-		<div class="information-container">
-			<h2>Festive Sweater Generator</h2>
-			<p>Let's get started!</p>
-			<p>Click on the circle to the right to upload a photo from facebook.</p>
-			<p>If you don't want to upload your own photo, click on a character below instead.</p>
-			<div class="character-container">
-				<div class="snowman-container">
-					<img src="resources/images/snowman.png" alt="" class="snowman">
-					<label>Snowman</label>
-				</div>
-				<div class="bear-container">
-					<img src="resources/images/bear.png" alt="" class="bear">
-					<label>Bear</label>
-				</div>
-				<div class="owl-container">
-					<img src="resources/images/owl.png" alt="" class="owl">
-					<label>Owl</label>
-				</div>
-				<div class="salmon-container">
-					<img src="resources/images/salmon.png" alt="" class="salmon">
-					<label>Salmon</label>
+			<!-- <div class=" overlapping-bg-container">-->
+			<img src="resources/images/zia-image.png" class="zia-image">
+			<!-- </div> -->
+			
+			<div class="information-container hidden">
+				<h2>Festive Sweater Generator</h2>
+				<p>Let's get started!</p>
+				<p>Click on the circle to the right to upload a photo from facebook.</p>
+				<p>If you don't want to upload your own photo, click on a character below instead.</p>
+				<div class="character-container">
+					<div class="snowman-container">
+						<img src="resources/images/snowman.png" alt="" class="snowman">
+						<label>Snowman</label>
+					</div>
+					<div class="bear-container">
+						<img src="resources/images/bear.png" alt="" class="bear">
+						<label>Bear</label>
+					</div>
+					<div class="owl-container">
+						<img src="resources/images/owl.png" alt="" class="owl">
+						<label>Owl</label>
+					</div>
+					<div class="salmon-container">
+						<img src="resources/images/salmon.png" alt="" class="salmon">
+						<label>Salmon</label>
+					</div>
 				</div>
 			</div>
-		</div>
-	</aside>
-	<section class="active-area"></section>
+			<div class="information-container">
+				<h2>Festive Sweater Generator</h2>
+				<p>Choose your sweater style and customize the color in the menu below.</p>
+				<p>Sweater Style</p>
+				<div class="sweater-style-container">
+					<div class="sweater-1-container">
+						<img src="resources/images/sweater-1.png" alt="" class="sweater-1">
+					</div>
+					<div class="sweater-2-container">
+						<img src="resources/images/sweater-2.png" alt="" class="sweater-2">
+					</div>
+					<div class="sweater-3-container">
+						<img src="resources/images/sweater-3.png" alt="" class="sweater-3">
+					</div>
+					<div class="sweater-4-container">
+						<img src="resources/images/sweater-4.png" alt="" class="sweater-4">
+					</div>
+				</div>
+				<p class="sweater-color-label">Sweater Color</p>
+				<ul class="sweater-colors">
+					<li class="color-list-item" id="color-1"></li>
+					<li class="color-list-item" id="color-2"></li>
+					<li class="color-list-item" id="color-3"></li>
+					<li class="color-list-item" id="color-4"></li>
+					<li class="color-list-item" id="color-5"></li>
+					<li class="color-list-item" id="color-6"></li>
+					<li class="color-list-item" id="color-7"></li>
+				</ul>
+			</div>
+		</aside>
+		<section class="active-area">
+			<img src="resources/images/bg-image.png" class="bg-image">
+		</section>
+	</div>
 </body>
 </html>

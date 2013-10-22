@@ -1,32 +1,63 @@
 .sidebar {
 	width: 240px;
-	top: 30px;
-	bottom: 0px;
-	position: absolute;
+	margin-top: 30px;
+	height: 600px;
+	float: left;
+	// position: absolute;
+	// .overlapping-bg-container {
+	// 	background-color: $avista-light-blue;
+	// 	width: 296px;
+	// 	height: 114px;
+	// 	position: absolute;
+	// 	z-index: 100;
+	// 	margin-top: -115px;
+	// 	opacity: .6;
+	// 	img {
+	// 		width: 384px;
+	// 		height: 196px;
+	// 		margin-top: -47px;
+	// 		margin-left: -21px;
+	// 	}
+	// }
 	.logo-container {
 		height: 85px;
 		background-color: $dark-avista-blue;
-		.logo-bg {
-			height: 40px;
-			width: 117px;
-			background-color: $avista-logo-blue;
-			img {
-				position: relative;
-				width: 109px;
-				height: 21px;
-				top: 10px;
-				left: 4px;
-			}
+		z-index: 110;
+		margin-top: -29px;
+	}
+	.logo-bg {
+		height: 57px;
+		width: 146px;
+		background-color: $avista-logo-blue;
+		z-index: 120;
+		margin-top: -85px;
+		img {
+			position: relative;
+			width: 109px;
+			height: 21px;
+			top: 17px;
+			left: 16px;
+			z-index: 130;
 		}
+	}
+	.zia-image {
+		width: 384px;
+		height: 196px;
+		margin-top: -163px;
+		margin-left: -21px;
 	}
 	.information-container {
 		background-color: $sidebar-green;
-		height: 100%;
+		height: 516px;
+		margin-top: -8px;
+		padding: 5px;
 		h2 {
 			color: $pure-white;
 			text-transform: uppercase;
-			font-size: 22px;
+			font-size: 23px;
 			padding: 10px;
+			font-family: 'knitfontaregular';
+			text-shadow: #5f8a34 5px 5px 7px;
 		}
 		p {
 			color: $pure-white;
@@ -37,7 +68,7 @@
 	.character-container {
 		div {
 			display: inline-block;
-			margin-left: 16px;
+			margin-left: 10px;
 			margin-right: 16px;
 			margin-top: 5px;
 		}
@@ -72,5 +103,80 @@
 			font-size: 12px;
 			padding: 10px;
 		}
+
+	}
+	.sweater-style-container {
+		div {
+			display: inline-block;
+			margin-left: 18px;
+			margin-top: 5px;
+		}
+		.sweater-4-container {
+			margin-left: 36px;
+		}
+		img {
+			display: block;
+		}
+		.sweater-1 {
+			height: 76px;
+			width: 88px;
+		}
+		.sweater-2 {
+			height: 74px;
+			width: 88px;
+		}
+		.sweater-3 {
+			height: 76px;
+			width: 88px;
+		}
+		.sweater-4 {
+			height: 76px;
+			width: 53px;
+		}
+		label {
+			color: $pure-white;
+			font-size: 12px;
+			padding: 10px;
+		}
+
+	}
+	.sweater-color-label {
+		margin-top: 30px;
+	}
+	.sweater-colors {
+		margin-left: 11px;
+		li {
+			width: 18px;
+			height: 18px;
+			display: inline-block;
+			margin-right: 9px;
+			-moz-box-shadow: 0px 0px 5px #264D00;
+			-webkit-box-shadow: 0px 0px 5px #264D00;
+			box-shadow: 0px 0px 5px #264D00;
+		}
+		#color-1 {
+			background-color: #EC1C24;
+		}
+		#color-2 {
+			background-color: #C4D82E;
+		}
+		#color-3 {
+			background-color: #96D1F2;
+		}
+		#color-4 {
+			background-color: #0076BE;
+		}
+		#color-5 {
+			background-color: #002A5F;
+		}
+		#color-6 {
+			background-color: #FFDF00;
+		}
+		#color-7 {
+			background-color: #FFFFFF;
+		}
+	}
+	.hidden {
+		display: none;
 	}
 }
