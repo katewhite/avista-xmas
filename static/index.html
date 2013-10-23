@@ -25,9 +25,10 @@
 	        		newItem.css('width', $(this).width);
 	        		newItem.css('top', ui.position.top);
 	        		newItem.css('left', ui.position.left - 240);
-	        		newItem.draggable({ containment: 'parent' });
-	     
+	        		
 	        		$(this).append(newItem);
+	        		// newItem.resizable();
+	        		newItem.draggable({ containment: 'parent' });
         		}
 	        }
 	    });
@@ -35,6 +36,7 @@
   			zIndex: 10000,
 	    	helper: 'clone'
   		});
+	    // $( ".resizable" ).resizable();
 	    
 	  });
 	  </script>
@@ -63,7 +65,7 @@
 			<div class="logo-bg">
 				<img src="resources/images/avista_logo-white_transparent.png">
 			</div>
-			<div class=" overlapping-bg-container">
+			<div class=" overlapping-bg-container resizable">
 				<img src="resources/images/zia-image.png" class="zia-image">
 			</div>
 			
@@ -74,19 +76,19 @@
 				<p>If you don't want to upload your own photo, click on a character below instead.</p>
 				<ul class="character-container">
 					<li class="snowman-container">
-						<img src="resources/images/snowman.png" alt="" class="snowman">
+						<a class="snowman"></a>
 						<label>Snowman</label>
 					</li>
 					<li class="bear-container">
-						<img src="resources/images/bear.png" alt="" class="bear">
+						<a class="bear"></a>
 						<label>Bear</label>
 					</li>
 					<li class="owl-container">
-						<img src="resources/images/owl.png" alt="" class="owl">
+						<a class="owl"></a>
 						<label>Owl</label>
 					</li>
 					<li class="salmon-container">
-						<img src="resources/images/salmon.png" alt="" class="salmon">
+						<a class="salmon"></a>
 						<label>Salmon</label>
 					</li>
 				</ul>
@@ -148,7 +150,7 @@
 					</ul>
 					<p>Accessories</p>
 					<ul class="accessories-list">
-						<li class="accessory-list-item" id="accessory-list-item-1">
+						<li class="accessory-list-item " id="accessory-list-item-1">
 							<img src="resources/images/accessory-1.png" alt="" class="accessory-1 draggable-sidebar-item">
 						</li>
 						<li class="accessory-list-item" id="accessory-list-item-2">
@@ -176,7 +178,7 @@
 							<img src="resources/images/poinsettia.png" alt="" class="poinsettia draggable-sidebar-item">
 						</li>
 						<li class="decorations-list-item" id="bell-list-item">
-							<img src="resources/images/bell.png" alt="" class="bell">
+							<img src="resources/images/bell.png" alt="" class="bell draggable-sidebar-item">
 						</li>
 						<li class="decorations-list-item" id="orange-ornament-list-item">
 							<img src="resources/images/orange-ornament.png" alt="" class="orange-ornament draggable-sidebar-item">
