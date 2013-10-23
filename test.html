@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST</title>
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script>
+	  $(function() {
+	  	$( "#droppable" ).droppable({
+	        drop: function( event, ui ) {
+	        	console.log('DROPPED');
+	        }
+	    });
+	    $( ".draggable" ).draggable({
+	    	// helper: 'clone'
+	    	// revert: true
+  		});
+	    
+	  });
+	  </script>
+</head>
+<body>
+	<div class="draggable" style="height: 100px; width: 100px; background-color:red;"></div>
+	<div id="droppable" style="height: 100px; width: 100px; background-color:blue;"></div>
+</body>
+</html>

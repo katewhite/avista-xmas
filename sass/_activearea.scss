@@ -8,4 +8,20 @@
 		top: 30px;
 		bottom: 0px;
 	}
+	#back-button {
+		background-image: url('../resources/images/back-button.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 60px;
+		height: 54px;
+	}
+	#next-button {
+		background-image: url('../resources/images/next-button.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 60px;
+		height: 54px;
+		left: 490px;
+		top: 59px;
+	}
 }

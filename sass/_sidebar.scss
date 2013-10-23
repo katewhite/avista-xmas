@@ -209,24 +209,24 @@
 			img {
 				display: block;
 			}
-			.hair-1 {
-				height: 60px;
-			}
-			.hair-2 {
-				height: 71px;
-			}
-			.hair-3 {
-				height: 60px;
-			}
-			.hair-4 {
-				height: 41px;
-			}
-			.hair-5 {
-				height: 36px;
-			}
-			.hair-6 {
-				height: 50px;
-			}
+			// .hair-1 {
+			// 	height: 60px;
+			// }
+			// .hair-2 {
+			// 	height: 71px;
+			// }
+			// .hair-3 {
+			// 	height: 60px;
+			// }
+			// .hair-4 {
+			// 	height: 41px;
+			// }
+			// .hair-5 {
+			// 	height: 36px;
+			// }
+			// .hair-6 {
+			// 	height: 50px;
+			// }
 			label {
 				color: $pure-white;
 				font-size: 12px;
@@ -364,5 +364,23 @@
 	}
 	.hidden {
 		display: none;
+	}
+	.hair-1 {
+		height: 60px;
+	}
+	.hair-2 {
+		height: 71px;
+	}
+	.hair-3 {
+		height: 60px;
+	}
+	.hair-4 {
+		height: 41px;
+	}
+	.hair-5 {
+		height: 36px;
+	}
+	.hair-6 {
+		height: 50px;
 	}
 }
