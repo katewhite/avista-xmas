@@ -1,19 +1,16 @@
 .active-area {
-	float: left;
-	width: 575px;
-	.bg-image {
-		height: 643px;
-		width: 576px;
-		right: 0px;
-		top: 30px;
-		bottom: 0px;
-	}
+	position: absolute;
+	margin-left: 240px;
+	width: 784px;
+	height: 670px;
+	border: 1px solid black;
 	#back-button {
 		background-image: url('../resources/images/back-button.png');
 		background-repeat: no-repeat;
 		position: absolute;
 		width: 60px;
 		height: 54px;
+		margin-left: 60px;
 	}
 	#next-button {
 		background-image: url('../resources/images/next-button.png');
@@ -21,7 +18,7 @@
 		position: absolute;
 		width: 60px;
 		height: 54px;
-		left: 490px;
-		top: 59px;
+		margin-left: 120px;
+		margin-top: -1px;
 	}
 }

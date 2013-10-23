@@ -1,55 +1,51 @@
 .sidebar {
 	width: 240px;
 	margin-top: 30px;
-	height: 600px;
-	float: left;
-	// position: absolute;
-	// .overlapping-bg-container {
-	// 	background-color: $avista-light-blue;
-	// 	width: 296px;
-	// 	height: 114px;
-	// 	position: absolute;
-	// 	z-index: 100;
-	// 	margin-top: -115px;
-	// 	opacity: .6;
-	// 	img {
-	// 		width: 384px;
-	// 		height: 196px;
-	// 		margin-top: -47px;
-	// 		margin-left: -21px;
-	// 	}
-	// }
+	height: 1050px;
+	position: absolute;
+	background-color: $sidebar-green;
+	.overlapping-bg-container {
+		background-color: $avista-light-blue;
+		width: 296px;
+		height: 128px;
+		position: absolute;
+		margin-top: -88px;
+		opacity: .6;
+		img {
+			width: 409px;
+			height: 196px;
+			margin-top: -47px;
+			margin-left: -40px;
+		}
+	}
 	.logo-container {
-		height: 85px;
+		height: 115px;
 		background-color: $dark-avista-blue;
-		z-index: 110;
 		margin-top: -29px;
 	}
 	.logo-bg {
 		height: 57px;
 		width: 146px;
 		background-color: $avista-logo-blue;
-		z-index: 120;
-		margin-top: -85px;
+		margin-top: -115px;
 		img {
 			position: relative;
 			width: 109px;
 			height: 21px;
 			top: 17px;
 			left: 16px;
-			z-index: 130;
 		}
 	}
 	.zia-image {
 		width: 384px;
 		height: 196px;
-		margin-top: -135px;
+		margin-top: -21px;
 		margin-left: -21px;
 	}
 	.information-container {
 		background-color: $sidebar-green;
-		height: 516px;
-		margin-top: -36px;
+		height: 670px;
+		margin-top: 40px;
 		padding: 5px;
 		h2 {
 			color: $pure-white;

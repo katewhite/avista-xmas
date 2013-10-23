@@ -24,7 +24,7 @@
 	        		newItem.css('position', 'absolute');
 	        		newItem.css('width', $(this).width);
 	        		newItem.css('top', ui.position.top);
-	        		newItem.css('left', ui.position.left);
+	        		newItem.css('left', ui.position.left - 240);
 	        		newItem.draggable({ containment: 'parent' });
 	     
 	        		$(this).append(newItem);
@@ -63,9 +63,9 @@
 			<div class="logo-bg">
 				<img src="resources/images/avista_logo-white_transparent.png">
 			</div>
-			<!-- <div class=" overlapping-bg-container">-->
-			<img src="resources/images/zia-image.png" class="zia-image">
-			<!-- </div> -->
+			<div class=" overlapping-bg-container">
+				<img src="resources/images/zia-image.png" class="zia-image">
+			</div>
 			
 			<div class="information-container" id="step-1">
 				<h2>Festive Sweater Generator</h2>
@@ -206,8 +206,8 @@
 		<div class="active-area" id="droppable">
 			<a href="#" id="back-button" onclick="onBackButtonClick(this)" rel="step-1"></a>
 			<a href="#" id="next-button" onclick="onNextButtonClick(this)" rel="step-1"></a>
-			<img src="resources/images/bg-image.png" class="bg-image ">
 		</div>
+		<img src="resources/images/bg-image.png" class="bg-image ">
 	</div>
 </body>
 </html>
