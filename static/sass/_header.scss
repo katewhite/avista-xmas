@@ -3,16 +3,33 @@
 	background-color: $pure-white;
 }
 .inline-list {
-	float: right;
-	margin-right: 15px;
+	position: absolute;
+	margin-left: 750px;
 	margin-top: 7px;
+	a {
+		text-decoration: none;
+	}
 	li {
 		display: inline-block;
 		vertical-align: middle;
 		margin-left: 5px;
-		color: purple;
+		a, h5 {
+			color: #002a5f;
+			font-size: 14px;
+		}
+		a {
+			&:hover {
+				color: #00b5ef;
+			}
+		}
+		.social-icon {
+			color: #bbbdbf;
+			font-size: 16px;
+			&:hover { 
+				color: #82c341;
+			}
+		}
+		
 	}
-	a {
-		text-decoration: none;
-	}
+	
 }

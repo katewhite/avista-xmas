@@ -84,20 +84,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 5, ../sass/_header.scss */
 .inline-list {
-  float: right;
-  margin-right: 15px;
+  position: absolute;
+  margin-left: 750px;
   margin-top: 7px;
 }
 /* line 9, ../sass/_header.scss */
+.inline-list a {
+  text-decoration: none;
+}
+/* line 12, ../sass/_header.scss */
 .inline-list li {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  color: purple;
 }
-/* line 15, ../sass/_header.scss */
-.inline-list a {
-  text-decoration: none;
+/* line 16, ../sass/_header.scss */
+.inline-list li a, .inline-list li h5 {
+  color: #002a5f;
+  font-size: 14px;
+}
+/* line 21, ../sass/_header.scss */
+.inline-list li a:hover {
+  color: #00b5ef;
+}
+/* line 25, ../sass/_header.scss */
+.inline-list li .social-icon {
+  color: #bbbdbf;
+  font-size: 16px;
+}
+/* line 28, ../sass/_header.scss */
+.inline-list li .social-icon:hover {
+  color: #82c341;
 }
 
 /* line 1, ../sass/_activearea.scss */
@@ -106,7 +123,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-left: 240px;
   width: 784px;
   height: 670px;
-  border: 1px solid black;
 }
 /* line 7, ../sass/_activearea.scss */
 .active-area #back-button {
