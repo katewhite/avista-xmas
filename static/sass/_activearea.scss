@@ -79,4 +79,38 @@
 		max-height: 190px;
 		overflow: hidden;
 	}
+	.placedItem {
+		.ui-icon-gripsmall-diagonal-se {
+			display: none;
+		}
+		.ui-icon {
+			width: 0px;
+			height: 0px;
+		}
+		.ui-resizable-handle.ui-resizable-e {
+			width: 0px;
+			display: none;
+		}
+		.ui-resizable-handle.ui-resizable-s {
+			width: 0px;
+			display: none;
+		}
+	}
+	.placedItem[selected] {
+		.ui-icon-gripsmall-diagonal-se {
+			display: block;
+		}
+		.ui-icon {
+			width: 16px;
+			height: 16px;
+		}
+		.ui-resizable-handle.ui-resizable-e {
+			width: 7px;
+			display: block;
+		}
+		.ui-resizable-handle.ui-resizable-s {
+			width: 7px;
+			display: block;
+		}
+	}
 }

@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Avista Christmas</title>
 
+
+	<link rel="stylesheet" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
 	<link rel="stylesheet" href="stylesheets/app.css" />
 	<link rel="stylesheet" href="stylesheets/icomoon.css">
 	<script src="js/jquery-1.10.2.min.js"></script>
@@ -21,14 +23,36 @@
         		// is simply being moved around inside the image.
         		if (newItem.attr('class').indexOf('draggable-sidebar-item') != -1) {
 	        		newItem.removeClass('draggable-sidebar-item');
+	        		newItem.addClass('placedItem');
+	        		// Remove selected attribute from all other items, and add it to this one
+	        		$('.placedItem').each( function(index, element) {
+	        			$(this).removeAttr('selected');
+					});
+	        		newItem.attr('selected', true);
 	        		newItem.css('position', 'absolute');
 	        		newItem.css('width', $(this).width);
 	        		newItem.css('top', ui.position.top);
 	        		newItem.css('left', ui.position.left - 240);
-	        		
+	        		newItem.click(function () { 
+					    console.log('onPlacedItemClick');
+				    	// Remove selected attribute from all other placed items
+				    	$('.placedItem').each( function(index, element) {
+				    		$(this).removeAttr('selected');
+				    	});
+
+				    	// Add it to this one
+				    	$(this).attr('selected', true);
+					});
 	        		$(this).append(newItem);
-	        		// newItem.resizable();
-	        		newItem.draggable({ containment: 'parent' });
+	        		newItem.draggable({
+	        			containment: "parent"
+	        		}).find("img").resizable({
+	        			containment: ".active-area",
+	        			aspectRatio: true
+	        		});
+	        		// newItem.find('img').resizable({
+	        		// 	containment: ".active-area"
+	        		// });
         		}
 	        }
 	    });
@@ -71,10 +95,9 @@
 			<div class="logo-bg">
 				<img src="resources/images/avista_logo-white_transparent.png">
 			</div>
-			<div class=" overlapping-bg-container resizable">
+			<div class="overlapping-bg-container">
 				<img src="resources/images/zia-image.png" class="zia-image">
 			</div>
-			
 			<div class="information-container" id="step-1">
 				<h2>Festive Sweater Generator</h2>
 				<p>Let's get started!</p>
@@ -136,37 +159,57 @@
 					<!-- <div style="width: 100px; height: 100px; background-color: black;" id="droppable"></div> -->
 					<ul class="hair-style-list">
 						<li class="hair-1-container">
-							<img src="resources/images/hair-1.png" alt="" class="hair-1 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/hair-1.png" alt="" class="hair-1">
+							</div>
 						</li>
 						<li class="hair-2-container">
-							<img src="resources/images/hair-2.png" alt="" class="hair-2 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/hair-2.png" alt="" class="hair-2">
+							</div>
 						</li>
 						<li class="hair-3-container">
-							<img src="resources/images/hair-3.png" alt="" class="hair-3 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/hair-3.png" alt="" class="hair-3">
+							</div>	
 						</li>
 						<li class="hair-4-container">
-							<img src="resources/images/hair-4.png" alt="" class="hair-4 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/hair-4.png" alt="" class="hair-4">
+							</div>
 						</li>
 						<li class="hair-5-container">
-							<img src="resources/images/hair-5.png" alt="" class="hair-5 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/hair-5.png" alt="" class="hair-5">
+							</div>
 						</li>
 						<li class="hair-6-container">
-							<img src="resources/images/hair-6.png" alt="" class="hair-6 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/hair-6.png" alt="" class="hair-6">
+							</div>
 						</li>
 					</ul>
 					<p>Accessories</p>
 					<ul class="accessories-list">
 						<li class="accessory-list-item " id="accessory-list-item-1">
-							<img src="resources/images/accessory-1.png" alt="" class="accessory-1 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/accessory-1.png" alt="" class="accessory-1">
+							</div>
 						</li>
 						<li class="accessory-list-item" id="accessory-list-item-2">
-							<img src="resources/images/accessory-2.png" alt="" class="accessory-2 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/accessory-2.png" alt="" class="accessory-2">
+							</div>
 						</li>
 						<li class="accessory-list-item" id="accessory-list-item-3">
-							<img src="resources/images/accessory-3.png" alt="" class="accessory-3 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/accessory-3.png" alt="" class="accessory-3">
+							</div>
 						</li>
 						<li class="accessory-list-item" id="accessory-list-item-4">
-							<img src="resources/images/accessory-4.png" alt="" class="accessory-4 draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/accessory-4.png" alt="" class="accessory-4">
+							</div>
 						</li>
 					</ul>
 					<p id="decorations-label">Decorations</p>
@@ -178,34 +221,54 @@
 					</div>
 					<ul class="decorations-list">
 						<li class="decorations-list-item" id="snowflake-list-item">
-							<img src="resources/images/snowflake.png" alt="" class="snowflake draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/snowflake.png" alt="" class="snowflake">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="poinsettia-list-item">
-							<img src="resources/images/poinsettia.png" alt="" class="poinsettia draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/poinsettia.png" alt="" class="poinsettia">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="bell-list-item">
-							<img src="resources/images/bell.png" alt="" class="bell draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/bell.png" alt="" class="bell">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="orange-ornament-list-item">
-							<img src="resources/images/orange-ornament.png" alt="" class="orange-ornament draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/orange-ornament.png" alt="" class="orange-ornament">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="blue-ornament-list-item">
-							<img src="resources/images/blue-ornament.png" alt="" class="blue-ornament draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/blue-ornament.png" alt="" class="blue-ornament">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="green-ornament-list-item">
-							<img src="resources/images/green-ornament.png" alt="" class="green-ornament draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/green-ornament.png" alt="" class="green-ornament">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="knit-reindeer-list-item">
-							<img src="resources/images/knit-reindeer.png" alt="" class="knit-reindeer draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/knit-reindeer.png" alt="" class="knit-reindeer">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="knit-tree-list-item">
-							<img src="resources/images/knit-tree.png" alt="" class="knit-tree draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/knit-tree.png" alt="" class="knit-tree">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="knit-snowman-list-item">
-							<img src="resources/images/knit-snowman.png" alt="" class="knit-snowman draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/knit-snowman.png" alt="" class="knit-snowman">
+							</div>
 						</li>
 						<li class="decorations-list-item" id="lights-list-item">
-							<img src="resources/images/lights.png" alt="" class="lights draggable-sidebar-item">
+							<div class="draggable-sidebar-item">
+								<img src="resources/images/lights.png" alt="" class="lights">
+							</div>
 						</li>
 					</ul>
 				</div>

@@ -205,6 +205,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   max-height: 190px;
   overflow: hidden;
 }
+/* line 83, ../sass/_activearea.scss */
+.active-area .placedItem .ui-icon-gripsmall-diagonal-se {
+  display: none;
+}
+/* line 86, ../sass/_activearea.scss */
+.active-area .placedItem .ui-icon {
+  width: 0px;
+  height: 0px;
+}
+/* line 90, ../sass/_activearea.scss */
+.active-area .placedItem .ui-resizable-handle.ui-resizable-e {
+  width: 0px;
+  display: none;
+}
+/* line 94, ../sass/_activearea.scss */
+.active-area .placedItem .ui-resizable-handle.ui-resizable-s {
+  width: 0px;
+  display: none;
+}
+/* line 100, ../sass/_activearea.scss */
+.active-area .placedItem[selected] .ui-icon-gripsmall-diagonal-se {
+  display: block;
+}
+/* line 103, ../sass/_activearea.scss */
+.active-area .placedItem[selected] .ui-icon {
+  width: 16px;
+  height: 16px;
+}
+/* line 107, ../sass/_activearea.scss */
+.active-area .placedItem[selected] .ui-resizable-handle.ui-resizable-e {
+  width: 7px;
+  display: block;
+}
+/* line 111, ../sass/_activearea.scss */
+.active-area .placedItem[selected] .ui-resizable-handle.ui-resizable-s {
+  width: 7px;
+  display: block;
+}
 
 /* line 1, ../sass/_sidebar.scss */
 .sidebar {

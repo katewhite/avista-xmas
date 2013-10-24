@@ -114,4 +114,15 @@ onCharacterHeadClick = function(button) {
 onCreateTextClick = function() {
 	text = $('.sweater-text').val()
 	$('#decoration-text-container').html(text);
+},
+
+onPlacedItemClick = function(item) {
+	console.log('onPlacedItemClick');
+	// Remove selected attribute from all other placed items
+	$('.placedItem').each( function(index, element) {
+		$(this).removeAttr('selected');
+	});
+
+	// Add it to this one
+	item.setAttribute('selected', true);
 }
