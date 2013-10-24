@@ -6,10 +6,12 @@
 
 
 	<link rel="stylesheet" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="stylesheets/jquery.ui.rotatable.css">
 	<link rel="stylesheet" href="stylesheets/app.css" />
 	<link rel="stylesheet" href="stylesheets/icomoon.css">
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.ui.rotatable.min.js"></script>
 	<script src="js/avista-xmas.js"></script>
 	<script>
 	  $(function() {
@@ -50,6 +52,7 @@
 	        			containment: ".active-area",
 	        			aspectRatio: true
 	        		});
+	        		newItem.rotatable();
 	        		// newItem.find('img').resizable({
 	        		// 	containment: ".active-area"
 	        		// });

@@ -95,14 +95,21 @@
 			width: 0px;
 			display: none;
 		}
+		.ui-rotatable-handle {
+			display: none;
+		}
 	}
 	.placedItem[selected] {
+		border: 2px dashed #00a9e6;
 		.ui-icon-gripsmall-diagonal-se {
 			display: block;
 		}
 		.ui-icon {
 			width: 16px;
 			height: 16px;
+			background-image: url('../resources/images/resize-icon.png');
+			background-repeat: repeat;
+			background-size: 16px 16px;
 		}
 		.ui-resizable-handle.ui-resizable-e {
 			width: 7px;
@@ -111,6 +118,12 @@
 		.ui-resizable-handle.ui-resizable-s {
 			width: 7px;
 			display: block;
+		}
+		.ui-rotatable-handle {
+			display: block;
+			background-image: url('../resources/images/rotate-icon.png');
+			background-repeat: no-repeat;
+			position: absolute;
 		}
 	}
 }

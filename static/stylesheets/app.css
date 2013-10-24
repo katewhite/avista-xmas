@@ -224,24 +224,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 0px;
   display: none;
 }
-/* line 100, ../sass/_activearea.scss */
+/* line 98, ../sass/_activearea.scss */
+.active-area .placedItem .ui-rotatable-handle {
+  display: none;
+}
+/* line 102, ../sass/_activearea.scss */
+.active-area .placedItem[selected] {
+  border: 2px dashed #00a9e6;
+}
+/* line 104, ../sass/_activearea.scss */
 .active-area .placedItem[selected] .ui-icon-gripsmall-diagonal-se {
   display: block;
 }
-/* line 103, ../sass/_activearea.scss */
+/* line 107, ../sass/_activearea.scss */
 .active-area .placedItem[selected] .ui-icon {
   width: 16px;
   height: 16px;
+  background-image: url("../resources/images/resize-icon.png");
+  background-repeat: repeat;
+  background-size: 16px 16px;
 }
-/* line 107, ../sass/_activearea.scss */
+/* line 114, ../sass/_activearea.scss */
 .active-area .placedItem[selected] .ui-resizable-handle.ui-resizable-e {
   width: 7px;
   display: block;
 }
-/* line 111, ../sass/_activearea.scss */
+/* line 118, ../sass/_activearea.scss */
 .active-area .placedItem[selected] .ui-resizable-handle.ui-resizable-s {
   width: 7px;
   display: block;
+}
+/* line 122, ../sass/_activearea.scss */
+.active-area .placedItem[selected] .ui-rotatable-handle {
+  display: block;
+  background-image: url("../resources/images/rotate-icon.png");
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 /* line 1, ../sass/_sidebar.scss */
