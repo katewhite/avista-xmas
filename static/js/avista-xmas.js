@@ -1,4 +1,4 @@
-onBackButtonClick = function(button) {
+onBackButtonClick = function() {
 	console.log('onBackButtonClick');
 	jButtonBack = $('#back-button');
 	jButtonNext = $('#next-button');
@@ -27,7 +27,7 @@ onBackButtonClick = function(button) {
 	}
 },
 
-onNextButtonClick = function(button) {
+onNextButtonClick = function() {
 	console.log('onNextButtonClick');
 	jButtonBack = $('#back-button');
 	jButtonNext = $('#next-button');
@@ -69,4 +69,49 @@ toggleSidebar = function(step) {
 		selector = '#' + step;
 		$(selector).removeClass('hidden');
 	})
+},
+
+onCharacterHeadClick = function(button) {
+	console.log('onCharacterHeadClick');
+	console.log(button);
+	id = button.id;
+	
+	// Remove the selected attribute from all buttons, then re-add it to the one we selected
+	$('.character-button').each( function(index, element) {
+		// Toggle all instruction containers off
+		if ($(this).attr('selected')) {
+			if ($(this).attr('id') != id) {
+				$(this).removeAttr('selected');
+			} 
+		}
+		else {
+			if ($(this).attr('id') == id) {
+				$(this).attr('selected', true);
+			} 
+		}
+	})
+
+	headContainer = $('#head-container');
+	switch(id) {
+		case 'default':
+			headContainer[0].className = 'default-head';
+			break;
+		case 'snowman':
+			headContainer[0].className = 'snowman-head';
+			break;
+		case 'bear':
+			headContainer[0].className = 'bear-head';
+			break;
+		case 'owl':
+			headContainer[0].className = 'owl-head';
+			break;
+		case 'salmon':
+			headContainer[0].className = 'salmon-head';
+			break;
+	}
+},
+
+onCreateTextClick = function() {
+	text = $('.sweater-text').val()
+	$('#decoration-text-container').html(text);
 }

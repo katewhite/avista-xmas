@@ -76,19 +76,19 @@
 				<p>If you don't want to upload your own photo, click on a character below instead.</p>
 				<ul class="character-container">
 					<li class="snowman-container">
-						<a class="snowman"></a>
+						<a class="character-button" id="snowman" onclick="onCharacterHeadClick(this)"></a>
 						<label>Snowman</label>
 					</li>
 					<li class="bear-container">
-						<a class="bear"></a>
+						<a class="character-button" id="bear" onclick="onCharacterHeadClick(this)"></a>
 						<label>Bear</label>
 					</li>
 					<li class="owl-container">
-						<a class="owl"></a>
+						<a class="character-button" id="owl" onclick="onCharacterHeadClick(this)"></a>
 						<label>Owl</label>
 					</li>
 					<li class="salmon-container">
-						<a class="salmon"></a>
+						<a class="character-button" id="salmon" onclick="onCharacterHeadClick(this)"></a>
 						<label>Salmon</label>
 					</li>
 				</ul>
@@ -168,7 +168,7 @@
 						<div class="text-box-container">
 							<input type="text" class="sweater-text" placeholder="Enter Text">
 						</div>
-						<a href="#" class="sweater-text-button">Create</a>
+						<a href="#" class="sweater-text-button" onclick="onCreateTextClick(this)">Create</a>
 					</div>
 					<ul class="decorations-list">
 						<li class="decorations-list-item" id="snowflake-list-item">
@@ -206,6 +206,8 @@
 			</div>
 		</aside>
 		<div class="active-area" id="droppable">
+			<div id="head-container" class="default-head"></div>
+			<p id="decoration-text-container"></p>
 			<a href="#" id="back-button" onclick="onBackButtonClick(this)" rel="step-1"></a>
 			<a href="#" id="next-button" onclick="onNextButtonClick(this)" rel="step-1"></a>
 		</div>

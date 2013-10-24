@@ -70,6 +70,8 @@
 			margin-top: 5px;
 		}
 		.bear-container {
+			height: 88px;
+			width: 92px;
 			margin-left: 6px;
 		}
 		.salmon-container {
@@ -79,47 +81,75 @@
 		a {
 			display: block;
 		}
-		.snowman {
-			background-image: url('../resources/images/snowman-deselected.png');
+		#snowman {
+			background: url('../resources/images/snowman-deselected.png');
 			background-size: 85px 85px;
 			background-repeat: no-repeat;
 			height: 85px;
 			width: 85px;
 			&:hover {
-				background-image: url('../resources/images/snowman-hover.png');
+				background: url('../resources/images/snowman-hover.png');
 				background-size: 85px 85px;
+				background-repeat: no-repeat;
 			}
 		}
-		.bear {
-			background-image: url('../resources/images/bear-deselected.png');
+		#snowman[selected] {
+			background: url('../resources/images/snowman-selected.png');
+			background-size: 85px 85px;
+			background-repeat: no-repeat;
+		}
+		#bear {
+			background: url('../resources/images/bear-deselected.png');
 			background-size: 84px 80px;
 			background-repeat: no-repeat;
 			height: 80px;
 			width: 84px;
 			&:hover {
-				background-image: url('../resources/images/bear-hover.png');
+				height: 88px;
+				width: 92px;
+				background: url('../resources/images/bear-hover.png');
+				background-size: 92px 88px;
+				background-repeat: no-repeat;
 			}
 		}
-		.owl {
-			background-image: url('../resources/images/owl-deselected.png');
+		#bear[selected] {
+			background: url('../resources/images/bear-selected.png');
+			background-size: 84px 80px;
+			background-repeat: no-repeat;
+		}
+		#owl {
+			background: url('../resources/images/owl-deselected.png');
 			background-size: 90px 75px;
 			background-repeat: no-repeat;
 			height: 75px;
 			width: 90px;
 			&:hover {
-				background-image: url('../resources/images/owl-hover.png');
+				background: url('../resources/images/owl-hover.png');
+				background-size: 90px 75px;
+				background-repeat: no-repeat;
 			}
 		}
-		.salmon {
-			background-image: url('../resources/images/salmon-deselected.png');
+		#owl[selected] {
+			background: url('../resources/images/owl-selected.png');
+			background-size: 90px 75px;
+			background-repeat: no-repeat;
+		}
+		#salmon {
+			background: url('../resources/images/salmon-deselected.png');
 			background-size: 101px 82px;
 			background-repeat: no-repeat;
 			height: 82px;
 			width: 101px;
 			&:hover {
-				background-image: url('../resources/images/salmon-hover.png');
-
+				background: url('../resources/images/salmon-hover.png');
+				background-size: 101px 82px;
+				background-repeat: no-repeat;
 			}
+		}
+		#salmon[selected] {
+			background: url('../resources/images/salmon-selected.png');
+			background-size: 101px 82px;
+			background-repeat: no-repeat;
 		}
 		label {
 			color: $pure-white;
@@ -291,7 +321,7 @@
 			.text-box-container {
 				display: inline-block;
 				height: 18px;
-				background-image: url("../resources/images/textbox-border.png");
+				background: url("../resources/images/textbox-border.png");
 				background-repeat: no-repeat;
 				height: 21px;
 				width: 134px;
@@ -312,7 +342,7 @@
 			}
 			.sweater-text-button {
 				display: inline-block;
-				background-image: url("../resources/images/create-button.png");
+				background: url("../resources/images/create-button.png");
 				background-repeat: no-repeat;
 				position: relative;
 				top: -1px;

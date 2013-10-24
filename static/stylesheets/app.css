@@ -93,8 +93,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
+  color: purple;
 }
-/* line 14, ../sass/_header.scss */
+/* line 15, ../sass/_header.scss */
 .inline-list a {
   text-decoration: none;
 }
@@ -109,22 +110,84 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 7, ../sass/_activearea.scss */
 .active-area #back-button {
-  background-image: url("../resources/images/back-button.png");
+  background: url("../resources/images/back-button.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 60px;
   height: 54px;
   margin-left: 60px;
 }
-/* line 15, ../sass/_activearea.scss */
+/* line 16, ../sass/_activearea.scss */
 .active-area #next-button {
-  background-image: url("../resources/images/next-button.png");
+  background: url("../resources/images/next-button.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 60px;
   height: 54px;
   margin-left: 120px;
   margin-top: -1px;
+}
+/* line 26, ../sass/_activearea.scss */
+.active-area .default-head {
+  background: url("../resources/images/head-default.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 204px;
+  height: 274px;
+  margin-left: 370px;
+  margin-top: 81px;
+}
+/* line 35, ../sass/_activearea.scss */
+.active-area .snowman-head {
+  background: url("../resources/images/head-snowman.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 251px;
+  height: 251px;
+  margin-left: 350px;
+  margin-top: 97px;
+}
+/* line 44, ../sass/_activearea.scss */
+.active-area .bear-head {
+  background: url("../resources/images/head-bear.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 225px;
+  height: 226px;
+  margin-left: 362px;
+  margin-top: 122px;
+}
+/* line 53, ../sass/_activearea.scss */
+.active-area .owl-head {
+  background: url("../resources/images/head-owl.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 271px;
+  height: 222px;
+  margin-left: 340px;
+  margin-top: 125px;
+}
+/* line 62, ../sass/_activearea.scss */
+.active-area .salmon-head {
+  background: url("../resources/images/head-salmon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 266px;
+  height: 218px;
+  margin-left: 342px;
+  margin-top: 129px;
+}
+/* line 71, ../sass/_activearea.scss */
+.active-area #decoration-text-container {
+  font-family: 'knitfontaregular';
+  font-size: 18px;
+  color: white;
+  margin-top: 400px;
+  position: absolute;
+  margin-left: 386px;
+  max-width: 166px;
+  max-height: 190px;
+  overflow: hidden;
 }
 
 /* line 1, ../sass/_sidebar.scss */
@@ -210,121 +273,156 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 72, ../sass/_sidebar.scss */
 .sidebar .character-container .bear-container {
+  height: 88px;
+  width: 92px;
   margin-left: 6px;
 }
-/* line 75, ../sass/_sidebar.scss */
+/* line 77, ../sass/_sidebar.scss */
 .sidebar .character-container .salmon-container {
   margin-left: 0px;
   margin-right: 0px;
 }
-/* line 79, ../sass/_sidebar.scss */
+/* line 81, ../sass/_sidebar.scss */
 .sidebar .character-container a {
   display: block;
 }
-/* line 82, ../sass/_sidebar.scss */
-.sidebar .character-container .snowman {
-  background-image: url("../resources/images/snowman-deselected.png");
+/* line 84, ../sass/_sidebar.scss */
+.sidebar .character-container #snowman {
+  background: url("../resources/images/snowman-deselected.png");
   background-size: 85px 85px;
   background-repeat: no-repeat;
   height: 85px;
   width: 85px;
 }
-/* line 88, ../sass/_sidebar.scss */
-.sidebar .character-container .snowman:hover {
-  background-image: url("../resources/images/snowman-hover.png");
+/* line 90, ../sass/_sidebar.scss */
+.sidebar .character-container #snowman:hover {
+  background: url("../resources/images/snowman-hover.png");
   background-size: 85px 85px;
+  background-repeat: no-repeat;
 }
-/* line 93, ../sass/_sidebar.scss */
-.sidebar .character-container .bear {
-  background-image: url("../resources/images/bear-deselected.png");
+/* line 96, ../sass/_sidebar.scss */
+.sidebar .character-container #snowman[selected] {
+  background: url("../resources/images/snowman-selected.png");
+  background-size: 85px 85px;
+  background-repeat: no-repeat;
+}
+/* line 101, ../sass/_sidebar.scss */
+.sidebar .character-container #bear {
+  background: url("../resources/images/bear-deselected.png");
   background-size: 84px 80px;
   background-repeat: no-repeat;
   height: 80px;
   width: 84px;
 }
-/* line 99, ../sass/_sidebar.scss */
-.sidebar .character-container .bear:hover {
-  background-image: url("../resources/images/bear-hover.png");
+/* line 107, ../sass/_sidebar.scss */
+.sidebar .character-container #bear:hover {
+  height: 88px;
+  width: 92px;
+  background: url("../resources/images/bear-hover.png");
+  background-size: 92px 88px;
+  background-repeat: no-repeat;
 }
-/* line 103, ../sass/_sidebar.scss */
-.sidebar .character-container .owl {
-  background-image: url("../resources/images/owl-deselected.png");
+/* line 115, ../sass/_sidebar.scss */
+.sidebar .character-container #bear[selected] {
+  background: url("../resources/images/bear-selected.png");
+  background-size: 84px 80px;
+  background-repeat: no-repeat;
+}
+/* line 120, ../sass/_sidebar.scss */
+.sidebar .character-container #owl {
+  background: url("../resources/images/owl-deselected.png");
   background-size: 90px 75px;
   background-repeat: no-repeat;
   height: 75px;
   width: 90px;
 }
-/* line 109, ../sass/_sidebar.scss */
-.sidebar .character-container .owl:hover {
-  background-image: url("../resources/images/owl-hover.png");
+/* line 126, ../sass/_sidebar.scss */
+.sidebar .character-container #owl:hover {
+  background: url("../resources/images/owl-hover.png");
+  background-size: 90px 75px;
+  background-repeat: no-repeat;
 }
-/* line 113, ../sass/_sidebar.scss */
-.sidebar .character-container .salmon {
-  background-image: url("../resources/images/salmon-deselected.png");
+/* line 132, ../sass/_sidebar.scss */
+.sidebar .character-container #owl[selected] {
+  background: url("../resources/images/owl-selected.png");
+  background-size: 90px 75px;
+  background-repeat: no-repeat;
+}
+/* line 137, ../sass/_sidebar.scss */
+.sidebar .character-container #salmon {
+  background: url("../resources/images/salmon-deselected.png");
   background-size: 101px 82px;
   background-repeat: no-repeat;
   height: 82px;
   width: 101px;
 }
-/* line 119, ../sass/_sidebar.scss */
-.sidebar .character-container .salmon:hover {
-  background-image: url("../resources/images/salmon-hover.png");
+/* line 143, ../sass/_sidebar.scss */
+.sidebar .character-container #salmon:hover {
+  background: url("../resources/images/salmon-hover.png");
+  background-size: 101px 82px;
+  background-repeat: no-repeat;
 }
-/* line 124, ../sass/_sidebar.scss */
+/* line 149, ../sass/_sidebar.scss */
+.sidebar .character-container #salmon[selected] {
+  background: url("../resources/images/salmon-selected.png");
+  background-size: 101px 82px;
+  background-repeat: no-repeat;
+}
+/* line 154, ../sass/_sidebar.scss */
 .sidebar .character-container label {
   color: white;
   font-size: 12px;
   padding: 10px;
 }
-/* line 133, ../sass/_sidebar.scss */
+/* line 163, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container li {
   display: inline-block;
   margin-left: 17px;
   margin-top: 5px;
 }
-/* line 138, ../sass/_sidebar.scss */
+/* line 168, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-4-container {
   margin-left: 36px;
 }
-/* line 141, ../sass/_sidebar.scss */
+/* line 171, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container img {
   display: block;
 }
-/* line 144, ../sass/_sidebar.scss */
+/* line 174, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-1 {
   height: 76px;
   width: 88px;
 }
-/* line 148, ../sass/_sidebar.scss */
+/* line 178, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-2 {
   height: 74px;
   width: 88px;
 }
-/* line 152, ../sass/_sidebar.scss */
+/* line 182, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-3 {
   height: 76px;
   width: 88px;
 }
-/* line 156, ../sass/_sidebar.scss */
+/* line 186, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container .sweater-4 {
   height: 76px;
   width: 53px;
 }
-/* line 160, ../sass/_sidebar.scss */
+/* line 190, ../sass/_sidebar.scss */
 .sidebar .sweater-style-container label {
   color: white;
   font-size: 12px;
   padding: 10px;
 }
-/* line 167, ../sass/_sidebar.scss */
+/* line 197, ../sass/_sidebar.scss */
 .sidebar .sweater-color-label {
   margin-top: 30px;
 }
-/* line 170, ../sass/_sidebar.scss */
+/* line 200, ../sass/_sidebar.scss */
 .sidebar .sweater-colors {
   margin-left: 11px;
 }
-/* line 172, ../sass/_sidebar.scss */
+/* line 202, ../sass/_sidebar.scss */
 .sidebar .sweater-colors li {
   width: 18px;
   height: 18px;
@@ -334,137 +432,137 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-box-shadow: 0px 0px 5px #264D00;
   box-shadow: 0px 0px 5px #264D00;
 }
-/* line 181, ../sass/_sidebar.scss */
+/* line 211, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-1 {
   background-color: #EC1C24;
 }
-/* line 184, ../sass/_sidebar.scss */
+/* line 214, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-2 {
   background-color: #C4D82E;
 }
-/* line 187, ../sass/_sidebar.scss */
+/* line 217, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-3 {
   background-color: #96D1F2;
 }
-/* line 190, ../sass/_sidebar.scss */
+/* line 220, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-4 {
   background-color: #0076BE;
 }
-/* line 193, ../sass/_sidebar.scss */
+/* line 223, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-5 {
   background-color: #002A5F;
 }
-/* line 196, ../sass/_sidebar.scss */
+/* line 226, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-6 {
   background-color: #FFDF00;
 }
-/* line 199, ../sass/_sidebar.scss */
+/* line 229, ../sass/_sidebar.scss */
 .sidebar .sweater-colors #color-7 {
   background-color: #FFFFFF;
 }
-/* line 204, ../sass/_sidebar.scss */
+/* line 234, ../sass/_sidebar.scss */
 .sidebar .scrollable-container {
   height: 374px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-/* line 208, ../sass/_sidebar.scss */
+/* line 238, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list {
   margin-top: -15px;
   margin-left: -10px;
 }
-/* line 211, ../sass/_sidebar.scss */
+/* line 241, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list li {
   display: inline-block;
   margin-left: 8px;
   vertical-align: middle;
 }
-/* line 216, ../sass/_sidebar.scss */
+/* line 246, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list .hair-2-container {
   margin-bottom: -3px;
 }
-/* line 219, ../sass/_sidebar.scss */
+/* line 249, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list .hair-3-container {
   margin-left: 15px;
 }
-/* line 222, ../sass/_sidebar.scss */
+/* line 252, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list .hair-4-container {
   margin-left: 20px;
 }
-/* line 225, ../sass/_sidebar.scss */
+/* line 255, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list .hair-5-container {
   margin-left: 30px;
 }
-/* line 228, ../sass/_sidebar.scss */
+/* line 258, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list .hair-6-container {
   margin-left: 33px;
 }
-/* line 231, ../sass/_sidebar.scss */
+/* line 261, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list img {
   display: block;
 }
-/* line 252, ../sass/_sidebar.scss */
+/* line 282, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .hair-style-list label {
   color: white;
   font-size: 12px;
   padding: 10px;
 }
-/* line 258, ../sass/_sidebar.scss */
+/* line 288, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list {
   margin-left: 0px;
   margin-top: 5px;
 }
-/* line 261, ../sass/_sidebar.scss */
+/* line 291, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list li {
   display: inline-block;
   margin-top: -10px;
   vertical-align: middle;
 }
-/* line 266, ../sass/_sidebar.scss */
+/* line 296, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list #accessory-list-item-2 {
   margin-left: 36px;
 }
-/* line 269, ../sass/_sidebar.scss */
+/* line 299, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list #accessory-list-item-4 {
   margin-left: 27px;
 }
-/* line 272, ../sass/_sidebar.scss */
+/* line 302, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list .accessory-1 {
   width: 76px;
 }
-/* line 275, ../sass/_sidebar.scss */
+/* line 305, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list .accessory-2 {
   width: 88px;
 }
-/* line 278, ../sass/_sidebar.scss */
+/* line 308, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list .accessory-3 {
   width: 84px;
 }
-/* line 281, ../sass/_sidebar.scss */
+/* line 311, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .accessories-list .accessory-4 {
   width: 93px;
   margin-top: 17px;
 }
-/* line 286, ../sass/_sidebar.scss */
+/* line 316, ../sass/_sidebar.scss */
 .sidebar .scrollable-container #decorations-label {
   margin-top: -20px;
 }
-/* line 289, ../sass/_sidebar.scss */
+/* line 319, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .create-text-container {
   margin-left: 9px;
 }
-/* line 291, ../sass/_sidebar.scss */
+/* line 321, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .create-text-container .text-box-container {
   display: inline-block;
   height: 18px;
-  background-image: url("../resources/images/textbox-border.png");
+  background: url("../resources/images/textbox-border.png");
   background-repeat: no-repeat;
   height: 21px;
   width: 134px;
   position: relative;
   margin-top: -35px;
 }
-/* line 300, ../sass/_sidebar.scss */
+/* line 330, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .create-text-container .text-box-container .sweater-text {
   height: 13px;
   margin-left: 2px;
@@ -477,10 +575,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 3px;
   padding-left: 3px;
 }
-/* line 313, ../sass/_sidebar.scss */
+/* line 343, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .create-text-container .sweater-text-button {
   display: inline-block;
-  background-image: url("../resources/images/create-button.png");
+  background: url("../resources/images/create-button.png");
   background-repeat: no-repeat;
   position: relative;
   top: -1px;
@@ -494,104 +592,109 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 4px;
   padding-left: 5px;
 }
-/* line 330, ../sass/_sidebar.scss */
+/* line 360, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list {
   margin-left: 0px;
   margin-top: 15px;
 }
-/* line 333, ../sass/_sidebar.scss */
+/* line 363, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list li {
   display: inline-block;
   margin-top: -10px;
   margin-right: 6px;
   vertical-align: middle;
 }
-/* line 339, ../sass/_sidebar.scss */
+/* line 369, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list #blue-ornament-list-item {
   margin-left: 7px;
 }
-/* line 342, ../sass/_sidebar.scss */
+/* line 372, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list #green-ornament-list-item {
   margin-left: 4px;
 }
-/* line 345, ../sass/_sidebar.scss */
+/* line 375, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list #knit-tree-list-item {
   margin-left: 7px;
 }
-/* line 348, ../sass/_sidebar.scss */
+/* line 378, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list #knit-snowman-list-item {
   margin-left: 5px;
 }
-/* line 351, ../sass/_sidebar.scss */
+/* line 381, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list #lights-list-item {
   margin-left: 10px;
   margin-top: -5px;
 }
-/* line 355, ../sass/_sidebar.scss */
+/* line 385, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .snowflake {
   width: 60px;
 }
-/* line 358, ../sass/_sidebar.scss */
+/* line 388, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .poinsettia {
   width: 65px;
 }
-/* line 361, ../sass/_sidebar.scss */
+/* line 391, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .bell {
   width: 58px;
 }
-/* line 364, ../sass/_sidebar.scss */
+/* line 394, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .orange-ornament {
   width: 64px;
 }
-/* line 367, ../sass/_sidebar.scss */
+/* line 397, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .blue-ornament {
   width: 48px;
 }
-/* line 370, ../sass/_sidebar.scss */
+/* line 400, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .green-ornament {
   width: 63px;
 }
-/* line 373, ../sass/_sidebar.scss */
+/* line 403, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .knit-reindeer {
   width: 57px;
 }
-/* line 376, ../sass/_sidebar.scss */
+/* line 406, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .knit-tree {
   width: 60px;
 }
-/* line 379, ../sass/_sidebar.scss */
+/* line 409, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .knit-snowman {
   width: 49px;
 }
-/* line 382, ../sass/_sidebar.scss */
+/* line 412, ../sass/_sidebar.scss */
 .sidebar .scrollable-container .decorations-list .lights {
   width: 171px;
 }
-/* line 387, ../sass/_sidebar.scss */
+/* line 417, ../sass/_sidebar.scss */
 .sidebar .hidden {
   display: none;
 }
-/* line 390, ../sass/_sidebar.scss */
+/* line 420, ../sass/_sidebar.scss */
 .sidebar .hair-1 {
   height: 60px;
 }
-/* line 393, ../sass/_sidebar.scss */
+/* line 423, ../sass/_sidebar.scss */
 .sidebar .hair-2 {
   height: 71px;
 }
-/* line 396, ../sass/_sidebar.scss */
+/* line 426, ../sass/_sidebar.scss */
 .sidebar .hair-3 {
   height: 60px;
 }
-/* line 399, ../sass/_sidebar.scss */
+/* line 429, ../sass/_sidebar.scss */
 .sidebar .hair-4 {
   height: 41px;
 }
-/* line 402, ../sass/_sidebar.scss */
+/* line 432, ../sass/_sidebar.scss */
 .sidebar .hair-5 {
   height: 36px;
 }
-/* line 405, ../sass/_sidebar.scss */
+/* line 435, ../sass/_sidebar.scss */
 .sidebar .hair-6 {
   height: 50px;
+}
+
+/* line 14, ../sass/app.scss */
+body {
+  font-family: arial;
 }

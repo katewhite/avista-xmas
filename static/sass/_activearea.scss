@@ -5,7 +5,8 @@
 	height: 670px;
 	border: 1px solid black;
 	#back-button {
-		background-image: url('../resources/images/back-button.png');
+		// background-image: url('../resources/images/back-button.png');
+		background: url('../resources/images/back-button.png');
 		background-repeat: no-repeat;
 		position: absolute;
 		width: 60px;
@@ -13,12 +14,69 @@
 		margin-left: 60px;
 	}
 	#next-button {
-		background-image: url('../resources/images/next-button.png');
+		// background-image: url('../resources/images/next-button.png');
+		background: url('../resources/images/next-button.png');
 		background-repeat: no-repeat;
 		position: absolute;
 		width: 60px;
 		height: 54px;
 		margin-left: 120px;
 		margin-top: -1px;
+	}
+	.default-head {
+		background: url('../resources/images/head-default.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 204px;
+		height: 274px;
+		margin-left: 370px;
+		margin-top: 81px;
+	}
+	.snowman-head {
+		background: url('../resources/images/head-snowman.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 251px;
+		height: 251px;
+		margin-left: 350px;
+		margin-top: 97px;
+	}
+	.bear-head {
+		background: url('../resources/images/head-bear.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 225px;
+		height: 226px;
+		margin-left: 362px;
+		margin-top: 122px;
+	}
+	.owl-head {
+		background: url('../resources/images/head-owl.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 271px;
+		height: 222px;
+		margin-left: 340px;
+		margin-top: 125px;
+	}
+	.salmon-head {
+		background: url('../resources/images/head-salmon.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 266px;
+		height: 218px;
+		margin-left: 342px;
+		margin-top: 129px;
+	}
+	#decoration-text-container {
+		font-family: 'knitfontaregular';
+		font-size: 18px;
+		color: white;
+		margin-top: 400px;
+		position: absolute;
+		margin-left: 386px;
+		max-width: 166px;
+		max-height: 190px;
+		overflow: hidden;
 	}
 }
